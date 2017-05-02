@@ -18,14 +18,14 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Allow manual language change. It also could be used when you need a language that is not supported in the os like "Basque"
                        DESC
 
-  s.homepage         = 'https://github.com/Pataluze/ByvLocalizations'
+  s.homepage         = 'https://github.com/byvapps/ByvLocalizations'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Pataluze' => 'adrian@byvapps.com' }
-  s.source           = { :git => 'https://github.com/Pataluze/ByvLocalizations.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/byvapps/ByvLocalizations.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
