@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'ByvLocalizations'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of ByvLocalizations.'
+  s.summary          = 'Select language manually in app.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-Allow manual language change. It also could be used when you need a language that is not supported in the os like "Basque"
+Select language manually in app. It also could be used when you need a language that is not supported in the os like "Basque"
                        DESC
 
   s.homepage         = 'https://github.com/byvapps/ByvLocalizations'
