@@ -39,6 +39,10 @@ public class ByvLocalizator {
             if let bundle = Bundle(path: path) {
                 return bundle
             }
+        } else if let path = Bundle.main.path(forResource: "Base", ofType: "lproj") {
+            if let bundle = Bundle(path: path) {
+                return bundle
+            }
         }
         fatalError("Localizable file NOT found")
     }()
