@@ -39,7 +39,7 @@ class ViewController: UIViewController {
         self.present(av, animated: true, completion: nil)
     }
     
-    func reloadLabels() {
+    @objc func reloadLabels() {
         label.text = "textToTranslate".localize()
         languageName.text = ByvLocalizator.shared.currentLanguage.name()
     }
