@@ -7,3 +7,15 @@
 */
 
 "textToTranslate" = "Salut";
+
+/* */
+"formatText" = "%.2f points";
+
+/*  */
+"changeText" = "Changer la langue";
+
+/*  */
+"first" = "Premier";
+
+/*  */
+"second" = "Seconde";

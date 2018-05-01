@@ -11,8 +11,14 @@ import ByvLocalizations
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var languageName: UILabel!
+    @IBOutlet weak var barButton: UIBarButtonItem!
+    @IBOutlet weak var changeBtn: UIButton!
+    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var segmented: UISegmentedControl!
+    @IBOutlet weak var textView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +29,26 @@ class ViewController: UIViewController {
             selector: #selector(self.reloadLabels),
             name: ByvLocalizator.notiName,
             object: nil)
+        
+        
+        self.navigationController?.tabBarItem.locTitle = "textToTranslate"
+        
+        self.navigationItem.locTitle = "textToTranslate"
+        
+        barButton.locTitle = "textToTranslate"
+        
+        searchBar.locPlaceholder = "textToTranslate"
+        
+        textField.locPlaceholder = "textToTranslate"
+        
+        segmented.locTitleFormat(format: "first", at: 0)
+        segmented.locTitleFormat(format: "second", at: 1)
+        
+        textView.locText = "textToTranslate"
+        
+        label.locFormat(format: "formatText", args: [22.586])
+        
+        changeBtn.locTitle = "changeText"
         
         reloadLabels()
     }
@@ -40,7 +66,6 @@ class ViewController: UIViewController {
     }
     
     @objc func reloadLabels() {
-        label.text = "textToTranslate".localize()
         languageName.text = ByvLocalizator.shared.currentLanguage.name()
     }
 

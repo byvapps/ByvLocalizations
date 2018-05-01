@@ -8,3 +8,15 @@
 
 /*  */
 "textToTranslate" = "Kaixo";
+
+/* */
+"formatText" = "%.2f puntu";
+
+/*  */
+"changeText" = "Hizkuntza aldatu";
+
+/*  */
+"first" = "Lehenengoa";
+
+/*  */
+"second" = "Bigarrena";

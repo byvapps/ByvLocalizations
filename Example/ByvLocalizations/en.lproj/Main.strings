@@ -1,0 +1,36 @@
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "6i6-wn-efe"; */
+"6i6-wn-efe.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Change Language"; ObjectID = "6xF-BU-3ap"; */
+"6xF-BU-3ap.normalTitle" = "Change Language";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "9ZC-Qj-gHw"; */
+"9ZC-Qj-gHw.text" = "Label";
+
+/* Class = "UITextView"; text = "TextView tex"; ObjectID = "DhC-k4-r5K"; */
+"DhC-k4-r5K.text" = "TextView tex";
+
+/* Class = "UILabel"; text = "Language"; ObjectID = "Rcr-z5-IQb"; */
+"Rcr-z5-IQb.text" = "Language";
+
+/* Class = "UITabBarItem"; title = "Tab title"; ObjectID = "al7-bQ-Roh"; */
+"al7-bQ-Roh.title" = "Tab title";
+
+/* Class = "UINavigationItem"; title = "Nav title"; ObjectID = "fiF-Yw-Ixq"; */
+"fiF-Yw-Ixq.title" = "Nav title";
+
+/* Class = "UISegmentedControl"; jwX-4Q-vPs.segmentTitles[0] = "First"; ObjectID = "jwX-4Q-vPs"; */
+"jwX-4Q-vPs.segmentTitles[0]" = "First";
+
+/* Class = "UISegmentedControl"; jwX-4Q-vPs.segmentTitles[1] = "Second"; ObjectID = "jwX-4Q-vPs"; */
+"jwX-4Q-vPs.segmentTitles[1]" = "Second";
+
+/* Class = "UIBarButtonItem"; title = "Bar Buttom Item"; ObjectID = "vrL-4M-1vJ"; */
+"vrL-4M-1vJ.title" = "Bar Buttom Item";
+
+/* Class = "UITextField"; placeholder = "PlaceHolder text"; ObjectID = "w3y-yr-Ohm"; */
+"w3y-yr-Ohm.placeholder" = "PlaceHolder text";
+
+/* Class = "UITextField"; text = "Text Field text"; ObjectID = "w3y-yr-Ohm"; */
+"w3y-yr-Ohm.text" = "Text Field text";
