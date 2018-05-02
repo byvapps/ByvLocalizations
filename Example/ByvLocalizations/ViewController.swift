@@ -31,25 +31,38 @@ class ViewController: UIViewController {
             object: nil)
         
         
+        self.navigationController?.tabBarItem.locTitle("textToTranslate1")
         self.navigationController?.tabBarItem.locTitle("textToTranslate")
         
-        self.navigationItem.locTitle(format: "textToTranslate")
+        self.navigationItem.locTitle("textToTranslate2")
+        self.navigationItem.locTitle("textToTranslate")
         
-        barButton.locTitle(format: "textToTranslate")
+        barButton.locTitle("textToTranslate3")
+        barButton.locTitle("textToTranslate")
         
-        searchBar.locPlaceholder(format: "textToTranslate")
+        searchBar.locPlaceholder("textToTranslate4")
+        searchBar.locPlaceholder("textToTranslate")
         
-        textField.locPlaceholder(format: "textToTranslate")
+        textField.locPlaceholder("textToTranslate5")
+        textField.locPlaceholder("textToTranslate")
         
-        segmented.locTitle(format: "first", at: 0)
-        segmented.locTitle(format: "second", at: 1)
+        segmented.locTitle("first", at: 0)
+        segmented.locTitle("second", at: 1)
         
-        textView.locText(format: "textToTranslate")
-        textView.locText(format: "textToTranslate", comment: "The comment")
+        textView.locText("textToTranslate6", comment: "The comment")
+        textView.locText("textToTranslate")
         
-        label.locText(format: "formatText", args: [22.586], comment: "%.2f is points value")
+        label.locText("formatText", args: [22.586], comment: "%.2f is points value")
         
-        changeBtn.locTitle(format: "changeText")
+        changeBtn.locTitle("changeText")
+        
+        // to test genstring
+        _ = NSLocalizedString("NSLocalizedString", comment: "comment")
+        if let path = Bundle.main.path(forResource: "Base", ofType: "lproj") {
+            if let bundle = Bundle(path: path) {
+                _ = NSLocalizedString("NSLocalizedString_full", tableName: nil, bundle: bundle, value: "", comment: "comentario")
+            }
+        }
         
         reloadLabels()
     }

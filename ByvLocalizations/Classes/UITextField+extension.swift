@@ -26,7 +26,7 @@ extension UITextField {
         self.localizeText()
     }
     
-    public func locPlaceholder(format: String, args:[CVarArg]? = nil, comment: String? = nil) {
+    public func locPlaceholder(_ format: String, args:[CVarArg]? = nil, comment: String? = nil) {
         self.formatText = ByvFormatLoc(format: format, args: args, comment: comment)
         self.observeLocChanges()
     }

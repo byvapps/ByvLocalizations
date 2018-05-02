@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ByvLocalizations'
-  s.version          = '0.1.4'
+  s.version          = '1.0.0'
   s.summary          = 'Select language manually in app.'
 
 # This description is used to generate tags and improve search results.

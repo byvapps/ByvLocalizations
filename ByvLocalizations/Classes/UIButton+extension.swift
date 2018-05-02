@@ -27,7 +27,7 @@ extension UIButton {
         self.localizeText()
     }
     
-    public func locTitle(format: String, args:[CVarArg]? = nil, comment: String? = nil) {
+    public func locTitle(_ format: String, args:[CVarArg]? = nil, comment: String? = nil) {
         self.formatTitle = ByvFormatLoc(format: format, args: args, comment: comment)
         self.observeLocChanges()
     }
