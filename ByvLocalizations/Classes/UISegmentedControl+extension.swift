@@ -26,7 +26,7 @@ extension UISegmentedControl {
         self.localizeText()
     }
     
-    public func locTitleFormat(format: String, args:[CVarArg]? = nil, at segment:Int) {
+    public func locTitle(_ format: String, args:[CVarArg]? = nil, at segment:Int) {
         var titles = self.formatTitles
         titles[segment] = ByvFormatLoc(format: format, args: args)
         self.formatTitles = titles

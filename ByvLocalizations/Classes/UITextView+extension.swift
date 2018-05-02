@@ -26,26 +26,7 @@ extension UITextView {
         self.localizeText()
     }
     
-    public var locText: String? {
-        get {
-            return formatText?.format
-        }
-        set {
-            if let newValue = newValue {
-                if self.formatText == nil {
-                    self.formatText = ByvFormatLoc(format: newValue)
-                } else {
-                    self.formatText?.format = newValue
-                }
-                self.observeLocChanges()
-            } else {
-                self.formatText = nil
-                NotificationCenter.default.removeObserver(self)
-            }
-        }
-    }
-    
-    public func locFormat(format: String, args:[CVarArg]? = nil) {
+    public func locText(_ format: String, args:[CVarArg]? = nil) {
         self.formatText = ByvFormatLoc(format: format, args: args)
         self.observeLocChanges()
     }

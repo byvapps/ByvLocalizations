@@ -26,26 +26,7 @@ extension UINavigationItem {
         self.localizeText()
     }
     
-    public var locTitle: String? {
-        get {
-            return formatTitle?.format
-        }
-        set {
-            if let newValue = newValue {
-                if self.formatTitle == nil {
-                    self.formatTitle = ByvFormatLoc(format: newValue)
-                } else {
-                    self.formatTitle?.format = newValue
-                }
-                self.observeLocChanges()
-            } else {
-                self.formatTitle = nil
-                NotificationCenter.default.removeObserver(self)
-            }
-        }
-    }
-    
-    public func locTitleFormat(format: String, args:[CVarArg]? = nil) {
+    public func locTitle(_ format: String, args:[CVarArg]? = nil) {
         self.formatTitle = ByvFormatLoc(format: format, args: args)
         self.observeLocChanges()
     }

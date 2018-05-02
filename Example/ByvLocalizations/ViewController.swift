@@ -31,24 +31,24 @@ class ViewController: UIViewController {
             object: nil)
         
         
-        self.navigationController?.tabBarItem.locTitle = "textToTranslate"
+        self.navigationController?.tabBarItem.locTitle("textToTranslate")
         
-        self.navigationItem.locTitle = "textToTranslate"
+        self.navigationItem.locTitle("textToTranslate")
         
-        barButton.locTitle = "textToTranslate"
+        barButton.locTitle("textToTranslate")
         
-        searchBar.locPlaceholder = "textToTranslate"
+        searchBar.locPlaceholder("textToTranslate")
         
-        textField.locPlaceholder = "textToTranslate"
+        textField.locPlaceholder("textToTranslate")
         
-        segmented.locTitleFormat(format: "first", at: 0)
-        segmented.locTitleFormat(format: "second", at: 1)
+        segmented.locTitle("first", at: 0)
+        segmented.locTitle("second", at: 1)
         
-        textView.locText = "textToTranslate"
+        textView.locText("textToTranslate")
         
-        label.locFormat(format: "formatText", args: [22.586])
+        label.locText("formatText", args: [22.586])
         
-        changeBtn.locTitle = "changeText"
+        changeBtn.locTitle("changeText")
         
         reloadLabels()
     }
