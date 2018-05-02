@@ -189,7 +189,6 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				5F16A6375E1442DFEDFA0A27 /* [CP] Embed Pods Frameworks */,
-				7B7E5C3E87595E7FC67EDBA0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -208,8 +207,6 @@
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				7283FC8D45F1C45BBFD229D7 /* [CP] Embed Pods Frameworks */,
-				8E7233ADBA5A0ABC4FC72BB5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -340,51 +337,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ByvLocalizations_Example/Pods-ByvLocalizations_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7283FC8D45F1C45BBFD229D7 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ByvLocalizations_Tests/Pods-ByvLocalizations_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7B7E5C3E87595E7FC67EDBA0 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ByvLocalizations_Example/Pods-ByvLocalizations_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8E7233ADBA5A0ABC4FC72BB5 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ByvLocalizations_Tests/Pods-ByvLocalizations_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
