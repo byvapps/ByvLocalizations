@@ -52,6 +52,7 @@ extension UIBarItem {
     
     public func setLocTitleArgs(_ newValue:[CVarArg]) {
         self.formatTitle?.args = newValue
+        self.localizeText()
     }
     
     @objc func localizeText() {

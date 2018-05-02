@@ -52,6 +52,7 @@ extension UITextView {
     
     public func setLocArgs(_ newValue:[CVarArg]) {
         self.formatText?.args = newValue
+        self.localizeText()
     }
     
     @objc func localizeText() {
