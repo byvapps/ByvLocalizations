@@ -86,19 +86,7 @@ public class ByvLocalizator {
         return response
     }()
     
-    public func localize(_ string:String, comment:String) -> String {
-        return NSLocalizedString(string, tableName: nil, bundle: bundle, value: "", comment: "")
-    }
-}
-
-public extension String {
-    public func localize(comment:String = "") -> String {
-        return ByvLocalizator.shared.localize(self, comment: comment)
-    }
-    
-    func capitalizingFirstLetter() -> String {
-        let first = String(self.prefix(1)).capitalized
-        let other = String(self.dropFirst())
-        return first + other
+    public func localize(_ string:String, comment:String?) -> String {
+        return NSLocalizedString(string, tableName: nil, bundle: bundle, value: "", comment: comment ?? "")
     }
 }

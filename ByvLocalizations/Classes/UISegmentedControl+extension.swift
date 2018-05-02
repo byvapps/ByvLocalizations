@@ -26,9 +26,9 @@ extension UISegmentedControl {
         self.localizeText()
     }
     
-    public func locTitle(_ format: String, args:[CVarArg]? = nil, at segment:Int) {
+    public func locTitle(format: String, args:[CVarArg]? = nil, at segment:Int, comment: String? = nil) {
         var titles = self.formatTitles
-        titles[segment] = ByvFormatLoc(format: format, args: args)
+        titles[segment] = ByvFormatLoc(format: format, args: args, comment: comment)
         self.formatTitles = titles
         self.observeLocChanges()
     }
@@ -37,9 +37,9 @@ extension UISegmentedControl {
         let keys = self.formatTitles.keys
         for key in keys {
             if let formatLoc = self.formatTitles[key] {
-                var str = formatLoc.format.localize()
+                var str = formatLoc.format.localize(comment: formatLoc.comment)
                 if let args = formatLoc.args {
-                    str = String(format: formatLoc.format.localize(), arguments: args)
+                    str = String(format: formatLoc.format.localize(comment: formatLoc.comment), arguments: args)
                 }
                 self.setTitle(str, forSegmentAt: key)
             }

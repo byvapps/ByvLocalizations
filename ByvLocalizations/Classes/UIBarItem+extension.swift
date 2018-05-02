@@ -26,8 +26,8 @@ extension UIBarItem {
         self.localizeText()
     }
     
-    public func locTitle(_ format: String, args:[CVarArg]? = nil) {
-        self.formatTitle = ByvFormatLoc(format: format, args: args)
+    public func locTitle(format: String, args:[CVarArg]? = nil, comment: String? = nil) {
+        self.formatTitle = ByvFormatLoc(format: format, args: args, comment: comment)
         self.observeLocChanges()
     }
     
@@ -39,9 +39,9 @@ extension UIBarItem {
     @objc func localizeText() {
         if let formatLoc = formatTitle {
             if let args = formatLoc.args {
-                self.title = String(format: formatLoc.format.localize(), arguments: args)
+                self.title = String(format: formatLoc.format.localize(comment: formatLoc.comment), arguments: args)
             } else {
-                self.title = formatLoc.format.localize()
+                self.title = formatLoc.format.localize(comment: formatLoc.comment)
             }
         }
     }

@@ -12,8 +12,9 @@ class ByvFormatLoc : NSObject {
     
     var format: String!
     var args: [CVarArg]? = nil
+    var comment: String? = nil
     
-    required init(format: String, args:[CVarArg]? = nil) {
+    required init(format: String, args:[CVarArg]? = nil, comment: String? = nil) {
         super.init()
         self.format = format
         self.args = args

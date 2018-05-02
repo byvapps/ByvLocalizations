@@ -33,22 +33,23 @@ class ViewController: UIViewController {
         
         self.navigationController?.tabBarItem.locTitle("textToTranslate")
         
-        self.navigationItem.locTitle("textToTranslate")
+        self.navigationItem.locTitle(format: "textToTranslate")
         
-        barButton.locTitle("textToTranslate")
+        barButton.locTitle(format: "textToTranslate")
         
-        searchBar.locPlaceholder("textToTranslate")
+        searchBar.locPlaceholder(format: "textToTranslate")
         
-        textField.locPlaceholder("textToTranslate")
+        textField.locPlaceholder(format: "textToTranslate")
         
-        segmented.locTitle("first", at: 0)
-        segmented.locTitle("second", at: 1)
+        segmented.locTitle(format: "first", at: 0)
+        segmented.locTitle(format: "second", at: 1)
         
-        textView.locText("textToTranslate")
+        textView.locText(format: "textToTranslate")
+        textView.locText(format: "textToTranslate", comment: "The comment")
         
-        label.locText("formatText", args: [22.586])
+        label.locText(format: "formatText", args: [22.586], comment: "%.2f is points value")
         
-        changeBtn.locTitle("changeText")
+        changeBtn.locTitle(format: "changeText")
         
         reloadLabels()
     }

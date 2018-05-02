@@ -26,8 +26,8 @@ extension UISearchBar {
         self.localizeText()
     }
     
-    public func locPlaceholder(_ format: String, args:[CVarArg]? = nil) {
-        self.formatText = ByvFormatLoc(format: format, args: args)
+    public func locPlaceholder(format: String, args:[CVarArg]? = nil, comment: String? = nil) {
+        self.formatText = ByvFormatLoc(format: format, args: args, comment: comment)
         self.observeLocChanges()
     }
     
@@ -39,9 +39,9 @@ extension UISearchBar {
     @objc func localizeText() {
         if let formatLoc = formatText {
             if let args = formatLoc.args {
-                self.placeholder = String(format: formatLoc.format.localize(), arguments: args)
+                self.placeholder = String(format: formatLoc.format.localize(comment: formatLoc.comment), arguments: args)
             } else {
-                self.placeholder = formatLoc.format.localize()
+                self.placeholder = formatLoc.format.localize(comment: formatLoc.comment)
             }
         }
     }

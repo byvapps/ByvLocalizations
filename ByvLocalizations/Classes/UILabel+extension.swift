@@ -28,8 +28,8 @@ extension UILabel {
         self.localizeText()
     }
     
-    public func locText(_ format: String, args:[CVarArg]? = nil) {
-        self.formatText = ByvFormatLoc(format: format, args: args)
+    public func locText(format: String, args:[CVarArg]? = nil, comment: String? = nil) {
+        self.formatText = ByvFormatLoc(format: format, args: args, comment: comment)
         self.observeLocChanges()
     }
     
@@ -41,9 +41,9 @@ extension UILabel {
     @objc func localizeText() {
         if let formatLoc = formatText {
             if let args = formatLoc.args {
-                self.text = String(format: formatLoc.format.localize(), arguments: args)
+                self.text = String(format: formatLoc.format.localize(comment: formatLoc.comment), arguments: args)
             } else {
-                self.text = formatLoc.format.localize()
+                self.text = formatLoc.format.localize(comment: formatLoc.comment)
             }
             self.superview?.layoutSubviews()
         }
