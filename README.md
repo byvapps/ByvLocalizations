@@ -56,7 +56,15 @@ func reloadLabels() {
 
 ## Generator
 
-This generator [ByvLocalizableStringsGenerator.swift](https://gist.github.com/adrianByv/4546b21df378c05b978375f446379754) can help to create and update Localizable.strings
+This generator [ByvLocalizableStringsGenerator](https://github.com/byvapps/ByvLocalizableStringsGenerator) can help to create and update Localizable.strings
+
+## Interface Builder Extensions
+
+If you want to localize texts directly from Interface builder you can use [ByvLocalizationsIB](https://github.com/byvapps/ByvLocalizationsIB)
+
+```ruby
+pod "ByvLocalizationsIB"
+```
 
 ## Author
 
