@@ -12,7 +12,7 @@ public extension String {
         return ByvLocalizator.shared.localize(self, comment: comment)
     }
     
-    func capitalizingFirstLetter() -> String {
+    public func capitalizingFirstLetter() -> String {
         let first = String(self.prefix(1)).capitalized
         let other = String(self.dropFirst())
         return first + other

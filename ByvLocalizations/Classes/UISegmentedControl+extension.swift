@@ -8,7 +8,7 @@
 import Foundation
 
 extension UISegmentedControl {
-    private(set) var formatTitles: [Int: ByvFormatLoc] {
+    public private(set) var formatTitles: [Int: ByvFormatLoc] {
         get {
             return objc_getAssociatedObject(self, &ByvFormatLoc.assKey) as? [Int: ByvFormatLoc] ?? [:]
         }

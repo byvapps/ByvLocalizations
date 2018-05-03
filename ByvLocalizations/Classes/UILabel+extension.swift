@@ -9,8 +9,7 @@
 import UIKit
 
 extension UILabel {
-    
-    private(set) var formatText: ByvFormatLoc? {
+    public private(set) var formatText: ByvFormatLoc? {
         get {
             return objc_getAssociatedObject(self, &ByvFormatLoc.assKey) as? ByvFormatLoc
         }

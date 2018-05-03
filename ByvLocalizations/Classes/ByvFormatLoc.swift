@@ -7,14 +7,14 @@
 
 import UIKit
 
-class ByvFormatLoc : NSObject {
+public class ByvFormatLoc : NSObject {
     static var assKey: UInt8 = 0
     
-    var format: String!
-    var args: [CVarArg]? = nil
-    var comment: String? = nil
+    public var format: String!
+    public var args: [CVarArg]? = nil
+    public var comment: String? = nil
     
-    required init(format: String, args:[CVarArg]? = nil, comment: String? = nil) {
+    public required init(format: String, args:[CVarArg]? = nil, comment: String? = nil) {
         super.init()
         self.format = format
         self.args = args

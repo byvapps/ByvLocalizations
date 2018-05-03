@@ -8,7 +8,7 @@
 import Foundation
 
 extension UINavigationItem {
-    private(set) var formatTitle: ByvFormatLoc? {
+    public private(set) var formatTitle: ByvFormatLoc? {
         get {
             return objc_getAssociatedObject(self, &ByvFormatLoc.assKey) as? ByvFormatLoc
         }
