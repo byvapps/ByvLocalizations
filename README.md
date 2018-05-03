@@ -33,6 +33,12 @@ override func viewDidLoad() {
         name: ByvLocalizator.notiName,
         object: nil)
 
+    // This label will reload automatically when language change
+    autoLabel.locText("Localized_key")
+
+    // suport format strings with arguments to update localized text correctly
+    format.locText("%.2f POINTS", args: [22.586], comment: "%.2f is points value")
+
     reloadLabels()
 }
 
@@ -53,6 +59,32 @@ func reloadLabels() {
     languageName.text = ByvLocalizator.shared.currentLanguage.name()
 }
 ```
+
+## Extensions
+
+Now implements some UI extensions to make more easy localizations. They are automatically updated en language change
+
+```swift
+UILabel             =>  label.locText("localized_text")
+
+UITextView          =>  textView.locText("localized_text")
+
+UIButton            =>  button.locTitle("localized_text")
+
+UITabBarItem        =>  self.navigationController?.tabBarItem.locTitle("localized_text")
+
+UINavigationItem    =>  sself.navigationItem.locTitle("localized_text")
+
+UIBarButtonItem     =>  barButton.locTitle("localized_text")
+
+UITextField         =>  textField.locPlaceholder("localized_text")
+
+UISearchBar         =>  searchBar.locPlaceholder("localized_text")
+
+UISegmentedControl  =>  segmented.locTitle("first", at: 0)
+                        segmented.locTitle("second", at: 1)
+```
+
 
 ## Generator
 
