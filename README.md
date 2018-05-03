@@ -62,7 +62,7 @@ func reloadLabels() {
 
 ## Extensions
 
-Now implements some UI extensions to make more easy localizations. They are automatically updated en language change
+UI extensions to make more easy localizations. They are automatically updated on language change
 
 ```swift
 UILabel             =>  label.locText("localized_text")
