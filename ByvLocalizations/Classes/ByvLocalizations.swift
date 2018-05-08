@@ -34,7 +34,7 @@ public class ByvLocalizator {
     static public let shared = ByvLocalizator()
     var baseCode:String = "Base"
     
-    lazy var bundle:Bundle = {
+    lazy var bundle:Bundle? = {
         if let path = Bundle.main.path(forResource: self.currentLanguage.code, ofType: "lproj") {
             if let bundle = Bundle(path: path) {
                 return bundle
@@ -44,7 +44,8 @@ public class ByvLocalizator {
                 return bundle
             }
         }
-        fatalError("Localizable file NOT found")
+        return nil
+        //        fatalError("Localizable file NOT found")
     }()
     
     public lazy var currentLanguage:Language! = {
@@ -87,6 +88,9 @@ public class ByvLocalizator {
     }()
     
     public func localize(_ string:String, comment:String?) -> String {
-        return NSLocalizedString(string, tableName: nil, bundle: bundle, value: "", comment: comment ?? "")
+        if let bundle = bundle {
+            return NSLocalizedString(string, tableName: nil, bundle: bundle, value: "", comment: comment ?? "")
+        }
+        return string
     }
 }
