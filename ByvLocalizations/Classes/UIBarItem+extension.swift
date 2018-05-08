@@ -7,8 +7,8 @@
 
 import Foundation
 
-extension UIBarItem {
-    public private(set) var formatTitle: ByvFormatLoc? {
+public extension UIBarItem {
+    public var formatTitle: ByvFormatLoc? {
         get {
             return objc_getAssociatedObject(self, &ByvFormatLoc.assKey) as? ByvFormatLoc
         }

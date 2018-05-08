@@ -6,10 +6,9 @@
 //
 
 import Foundation
-import UIKit
 
-extension UIButton {
-    public private(set) var formatTitle: ByvFormatLoc? {
+public extension UIButton {
+    public var formatTitle: ByvFormatLoc? {
         get {
             return objc_getAssociatedObject(self, &ByvFormatLoc.assKey) as? ByvFormatLoc
         }

@@ -7,8 +7,8 @@
 
 import Foundation
 
-extension UITextView {
-    public private(set) var formatText: ByvFormatLoc? {
+public extension UITextView {
+    public var formatText: ByvFormatLoc? {
         get {
             return objc_getAssociatedObject(self, &ByvFormatLoc.assKey) as? ByvFormatLoc
         }
